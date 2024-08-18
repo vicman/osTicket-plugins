@@ -30,7 +30,6 @@ class S3StoragePluginConfig extends PluginConfig {
             'storage_type' => new ChoiceField(array(
                 'label' => $__('Storage Type'),
                 'configuration' => array('data-name'=>'storage_type'),
-                'onChange' => 'javascript:toggleStorageType();',
                 'choices' => array(
                     'amazon_s3' => $__('Amazon S3 Storage'),
                     's3_compatible' => $__('S3 Compatible Storage'),
